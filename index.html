@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg-gradient-to-t from-purple-600 to-blue-600 p-5 w-auto pl-10">
+        <nav class="image-secgtion py-5 flex">
+            <div class="rounded-full border-white-600  border-2 p-2 w-[60px] h-[60px] flex justify-center items-center">
+                <div
+                    class="rounded-full border-white-600 border-2 w-10 h-10 w-content flex justify-center items-center">
+                    <h1 class="text-white text-2xl">W</h1>
+
+                </div>
+
+            </div>
+            <!-- <img src="images/iconoir_home-simple.svg" alt="home icon">
+        <img src="images/noun-search-4511428 1.svg" alt="search icon">
+        <img src="images/bi_bookmark-dash-fill.svg" alt="bookmark icon">
+        <img src="images/fluent_person-16-filled.svg" alt="person"> -->
+            </navba>
+
+            <main class="grid lg:grid-cols-2 sm:grid-cols-1 w-80% place-items-center relative">
+                <div class="image-section self-auto ">
+                    <div class=" m-auto relative top-[-5%] z-10 absolute">
+                        <img class=" min-w-[60%]  m-auto" src="images/Moon cloud fast wind.png" alt="">
+                    </div>
+                    <div id="weather-info"
+                        class=" h-[300px] m-auto min-w-[100%] items-center p-10  top-0 shadow-black bg-white rounded-[30px] relative z-1">
+
+                        <h2 id="city" class="text-4xl mb-10">City</h2>
+                        <p id="temperture" class="text-2xl">Weather</p>
+                        <p id="description">Description</p>
+                    </div>
+                </div>
+
+                <div class="self-center min-w-[60%] h-[100%]">
+                    <!-- <img src="images/Sun cloud angled rain.png" alt=""> -->
+
+                    <form class="form-secgtion bg-[#f5d7f5] w-auto w-[60%] h-[320px] p-10 mt-[100px] rounded-[20px]"
+                        action="">
+                        <div>
+                            <p class="">Enter you weather input</p>
+
+                            <div class="mb-2 text-sm"><label class="mb-5" for="city-name">City</label></div>
+                            <div><input id="city-name" class="w-[100%] mb-5 p-2" type="text" placeholder="enter city" />
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="mb-2 text-sm"> <label for="country-name">Country:</label></div>
+                            <div> <input id="country-name" class="w-[100%] mb-5 p-2" type="text"
+                                    placeholder="enter country" /></div>
+
+                        </div>
+
+                        <input onclick="getWeatherApi()"
+                            class="submit bg-blue-600 mt-5 mb-5 text-white text-xl px-10 py-2 rounded-[10px]"
+                            type="submit" placeholder="Get Weather">
+                    </form>
+                </div>
+            </main>
+    </div>
+    <script src="script2.js?version=1.0"></script>
+
+
+
+</body>
+
+</html>
