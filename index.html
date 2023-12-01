@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div class="bg-gradient-to-t from-purple-600 to-blue-600 p-5 w-auto pl-10">
+    <div
+        class="bg-gradient-to-t from-blue-600 to-pink-600 p-5 w-auto pl-10  rounded-[30px] lg:w-[40%] sm:w-[90%] mx-auto my-10">
         <nav class="image-secgtion py-5 flex">
             <div class="rounded-full border-white-600  border-2 p-2 w-[60px] h-[60px] flex justify-center items-center">
                 <div
@@ -18,56 +19,49 @@
 
                 </div>
 
+
             </div>
-            <!-- <img src="images/iconoir_home-simple.svg" alt="home icon">
-        <img src="images/noun-search-4511428 1.svg" alt="search icon">
-        <img src="images/bi_bookmark-dash-fill.svg" alt="bookmark icon">
-        <img src="images/fluent_person-16-filled.svg" alt="person"> -->
-            </navba>
+        </nav>
 
-            <main class="grid lg:grid-cols-2 sm:grid-cols-1 w-80% place-items-center relative">
-                <div class="image-section self-auto ">
-                    <div class=" m-auto relative top-[-5%] z-10 absolute">
-                        <img class=" min-w-[60%]  m-auto" src="images/Moon cloud fast wind.png" alt="">
+        <main class="">
+            <div class="image-section">
+
+                <div id="weatherResult" class=" mx-auto items-center">
+                    <div class="items-center flex justify-center">
+                        <span id="city" class="text-3xl text-white mb-10 items-center">City</span>
+                        <span id="country">Country</span>
                     </div>
-                    <div id="weather-info"
-                        class=" h-[300px] m-auto min-w-[100%] items-center p-10  top-0 shadow-black bg-white rounded-[30px] relative z-1">
 
-                        <h2 id="city" class="text-4xl mb-10">City</h2>
-                        <p id="temperture" class="text-2xl">Weather</p>
+                    <div class="" id="weatherIcon" class=" w-[500px] mx-auto items-center">
+                        <img class="icon " src="images/Sun cloud angled rain.png" alt="">
+                    </div>
+                    <div class="flex justify-between items-center px-20 py-5">
+                        <p id="temperature" class="text-2xl">Weather</p>
                         <p id="description">Description</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="self-center min-w-[60%] h-[100%]">
-                    <!-- <img src="images/Sun cloud angled rain.png" alt=""> -->
+            <div class=" self-center min-w-[60%] h-[100%]">
+                <!-- <img src="images/Sun cloud angled rain.png" alt=""> -->
 
-                    <form class="form-secgtion bg-[#f5d7f5] w-auto w-[60%] h-[320px] p-10 mt-[100px] rounded-[20px]"
-                        action="">
-                        <div>
-                            <p class="">Enter you weather input</p>
+                <form class="form-secgtion rounded-[20px]" id="weather-form">
+                    <div class="flex bg-white rounded-[20px]">
 
-                            <div class="mb-2 text-sm"><label class="mb-5" for="city-name">City</label></div>
-                            <div><input id="city-name" class="w-[100%] mb-5 p-2" type="text" placeholder="enter city" />
-                            </div>
-
-                        </div>
-
-                        <div>
-                            <div class="mb-2 text-sm"> <label for="country-name">Country:</label></div>
-                            <div> <input id="country-name" class="w-[100%] mb-5 p-2" type="text"
-                                    placeholder="enter country" /></div>
-
-                        </div>
-
-                        <input onclick="getWeatherApi()"
-                            class="submit bg-blue-600 mt-5 mb-5 text-white text-xl px-10 py-2 rounded-[10px]"
-                            type="submit" placeholder="Get Weather">
-                    </form>
-                </div>
-            </main>
+                        <input id="city-name" class="w-[100%] px-5 focus:outline-none mb-5 p-2 text-xl" type="text"
+                            placeholder="Search city" />
+                        <button type="submit" class="px-5"> <svg xmlns="http://www.w3.org/2000/svg" fill="white"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                                <path stroke-linecap=" round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
-    <script src="script2.js?version=1.0"></script>
+    <script src="script.js?version=1.0"></script>
 
 
 
