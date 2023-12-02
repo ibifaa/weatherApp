@@ -32,8 +32,8 @@ document.getElementById("weather-form").addEventListener('submit', function (eve
         const icon = document.getElementById("weatherIcon");
     
   const defaultIconCode = '<img src="images/Sun cloud angled rain.png" alt="">'; // Example default icon code, change it as needed
-  const defaultIconUrl = `http://openweathermap.org/img/wn/${defaultIconCode}.png`;
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+  const defaultIconUrl = `https://openweathermap.org/img/wn/${defaultIconCode}.png`;
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
   icon.innerHTML = `<img src="${iconCode ? iconUrl : defaultIconUrl}" alt="Weather Icon">`;
 }
 
