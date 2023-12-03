@@ -1,7 +1,7 @@
 
 
 function getWeather(city){
-const  apiKey = `cfd3380ecff9fc0bb78930c8c727104f`;
+const  apiKey = `cfd3380ecff9fc0bb78930c8c72`;
 let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
 return new Promise((resolve, reject) => {
@@ -59,7 +59,7 @@ document.getElementById("weather-form").addEventListener('submit', function (eve
                 const iconCode = data.weather[0].icon;
                 displayWeatherIcon(iconCode);
 
-     
+
 
             })
             .catch(error => {
