@@ -1,3 +1,5 @@
+
+
 function getWeather(city){
 const  apiKey = `cfd3380ecff9fc0bb78930c8c727104f`;
 let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
